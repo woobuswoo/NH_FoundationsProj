@@ -396,6 +396,8 @@ GameObject:
   - component: {fileID: 1110187322}
   - component: {fileID: 1110187321}
   - component: {fileID: 1110187320}
+  - component: {fileID: 1110187325}
+  - component: {fileID: 1110187326}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -523,6 +525,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1110187325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110187319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852f5cc328d9ff248951501e061c64d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelloWorldDebug
+--- !u!114 &1110187326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110187319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e62cedfc6a3ee4db6228db94d2f7d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PushSpacetoDestroy
 --- !u!1001 &2178417063860941824
 PrefabInstance:
   m_ObjectHideFlags: 0
