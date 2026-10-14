@@ -11,4 +11,9 @@ public class DownArrowToDestroy : MonoBehaviour
             Destroy(gameObjectToDestroy);
         }
     }
+
+    void OnDestroy()
+    {
+        Debug.Log("Sphere destroyed");
+    }
 }
