@@ -46,12 +46,12 @@ public class TransformTranslate : MonoBehaviour
         
         if(Input.GetKey(KeyCode.S))
         {
-            transform.Translate(transform.forward * movementSpeed * Time.deltaTime);
+            transform.Translate(-transform.forward * movementSpeed * Time.deltaTime);
         }
 
         if(Input.GetKey(KeyCode.W))
         {
-            transform.Translate(-transform.forward * movementSpeed * Time.deltaTime);
+            transform.Translate(transform.forward * movementSpeed * Time.deltaTime);
         }
 
         if(Input.GetKey(KeyCode.A))
@@ -64,24 +64,15 @@ public class TransformTranslate : MonoBehaviour
             transform.Translate(transform.right * movementSpeed * Time.deltaTime);
         }
         
-        if(Input.GetKey(KeyCode.Space))
+        
+        if(Input.GetKey(KeyCode.Q))
         {
-            transform.Translate(transform.up * movementSpeed * Time.deltaTime);
+            transform.Rotate((-1) * transform.up * rotationSpeed * Time.deltaTime);
         }
 
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKey(KeyCode.E))
         {
-            transform.Translate(-transform.up * movementSpeed * Time.deltaTime);
-        }
-
-        if(Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Rotate(transform.up * movementSpeed * Time.deltaTime);
-        }
-
-        if(Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Rotate((-1) * transform.up * movementSpeed * Time.deltaTime);
+            transform.Rotate(transform.up * rotationSpeed * Time.deltaTime);
         }
 
 
