@@ -73,7 +73,7 @@ public class TransformTranslate : MonoBehaviour
         if(Input.GetKey(KeyCode.E))
         {
             transform.Rotate(transform.up * rotationSpeed * Time.deltaTime);
-        }
+        } 
 
 
     }
