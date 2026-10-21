@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
+    //SCRIPT MADE FROM DAVE/GAMEDEVELOPMENT TUTORIAL ON YOUTUBE
     public float sensX;
     public float sensY;
 
