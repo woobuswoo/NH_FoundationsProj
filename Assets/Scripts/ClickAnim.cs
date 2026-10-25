@@ -13,7 +13,7 @@ public class ClickAnim : MonoBehaviour
 
     void OnMouseDown()
     {
-        animator.SetBool("isClicked", true);
+        animator.SetBool("IsClicked", true);
     }
 
 
