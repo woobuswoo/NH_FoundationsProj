@@ -17126,7 +17126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad21d223e275af40a5647feb51481fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FallingAnimTrigger
-  ObjController: {fileID: 6501263615977065936}
+  ObjAnimator: {fileID: 6501263615977065936}
 --- !u!33 &8999281913194272001
 MeshFilter:
   m_ObjectHideFlags: 0
