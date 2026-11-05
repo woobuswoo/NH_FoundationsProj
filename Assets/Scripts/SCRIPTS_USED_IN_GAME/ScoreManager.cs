@@ -18,13 +18,13 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        scoreText.text = score.ToString() + " /4"; // restart counter
+        scoreText.text = score.ToString() + " / 4"; // restart counter
     }
 
     public void AddPoint()
     {
         score += 1;
-        scoreText.text = score.ToString() + " /4";
+        scoreText.text = score.ToString() + " / 4";
     }
     
     
