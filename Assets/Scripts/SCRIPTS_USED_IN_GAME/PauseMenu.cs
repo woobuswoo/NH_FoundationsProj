@@ -6,6 +6,7 @@ public class PauseMenu : MonoBehaviour
    public GameObject pauseMenu;
    public GameObject helpMenu;
    public GameObject aboutMenu;
+   public GameObject hintsMenu;
 
    private bool isPaused = false; 
 
@@ -32,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
+        hintsMenu.SetActive(false);
 
         Time.timeScale = 1;
 
@@ -47,6 +49,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
+        hintsMenu.SetActive(false);
 
         Time.timeScale = 0;
         isPaused = true;
@@ -62,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         helpMenu.SetActive(true);
         aboutMenu.SetActive(false);
+        hintsMenu.SetActive(false);
 
     }
 
@@ -71,6 +75,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
+        hintsMenu.SetActive(false);
     }
 
     public void QuitGame()
@@ -86,6 +91,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(true);
+        hintsMenu.SetActive(false);
     }
 
     public void CloseAbout()
@@ -93,5 +99,22 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
+        hintsMenu.SetActive(false);
+    }
+
+    public void OpenHints()
+    {
+        pauseMenu.SetActive(false);
+        helpMenu.SetActive(false);
+        aboutMenu.SetActive(false);
+        hintsMenu.SetActive(true);
+    }
+
+    public void CloseHints()
+    {
+        pauseMenu.SetActive(true);
+        helpMenu.SetActive(false);
+        aboutMenu.SetActive(false);
+        hintsMenu.SetActive(false);
     }
 }
