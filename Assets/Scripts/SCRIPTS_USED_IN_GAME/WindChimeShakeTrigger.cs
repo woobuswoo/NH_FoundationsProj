@@ -10,6 +10,8 @@ public class WindChimeShakeTrigger : MonoBehaviour
         {
             ObjAnimator.SetTrigger("ShakeTrigger");
         }
+
+        SoundManager.Instance.PlayChimesHitSound();
     }
     
 }

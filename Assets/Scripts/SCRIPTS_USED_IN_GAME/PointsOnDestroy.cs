@@ -11,5 +11,8 @@ public class PointsOnDestroy : MonoBehaviour
         Destroy(this.clickObjToDestroy);
 
         ScoreManager.instance.AddPoint();
+
+        SoundManager.Instance.PlayCollectSound();
+        
     }
 }

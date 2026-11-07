@@ -13,6 +13,7 @@ public class Jump_gravity : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpAmount, ForceMode.Impulse);
             isJumping = true;
+            SoundManager.Instance.PlayJumpSound();
         }
         
     }
