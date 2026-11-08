@@ -1,3 +1,4 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
@@ -6,7 +7,7 @@ public class PauseMenu : MonoBehaviour
    public GameObject pauseMenu;
    public GameObject helpMenu;
    public GameObject aboutMenu;
-   public GameObject hintsMenu;
+   public GameObject objectiveMenu;
 
    private bool isPaused = false; 
 
@@ -33,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
 
         Time.timeScale = 1;
 
@@ -49,7 +50,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
 
         Time.timeScale = 0;
         isPaused = true;
@@ -65,7 +66,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         helpMenu.SetActive(true);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
 
     }
 
@@ -75,7 +76,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
     }
 
     public void QuitGame()
@@ -91,7 +92,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(true);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
     }
 
     public void CloseAbout()
@@ -99,22 +100,23 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
     }
 
-    public void OpenHints()
+    public void OpenObjective()
     {
         pauseMenu.SetActive(false);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(true);
+        objectiveMenu.SetActive(true);
+
     }
 
-    public void CloseHints()
+    public void CloseObjective()
     {
         pauseMenu.SetActive(true);
         helpMenu.SetActive(false);
         aboutMenu.SetActive(false);
-        hintsMenu.SetActive(false);
+        objectiveMenu.SetActive(false);
     }
 }
