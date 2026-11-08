@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour
   [SerializeField] private AudioClip jumpSound;
   [SerializeField] private AudioClip chimesHitSound;
   [SerializeField] private AudioSource audioSource;
+  [SerializeField] private AudioClip binShakeSound;
 
   public static SoundManager Instance;
 
@@ -37,5 +38,10 @@ public class SoundManager : MonoBehaviour
     public void PlayChimesHitSound()
     {
         audioSource.PlayOneShot(chimesHitSound);
+    }
+
+    public void PlayBinShakeSound()
+    {
+        audioSource.PlayOneShot(binShakeSound);
     }
 }
