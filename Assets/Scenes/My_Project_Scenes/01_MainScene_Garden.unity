@@ -8198,7 +8198,7 @@ GameObject:
   - component: {fileID: 1547352709}
   - component: {fileID: 1547352708}
   m_Layer: 0
-  m_Name: Big_tree_trunk003 (1)
+  m_Name: Big_tree_trunk004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8880,7 +8880,7 @@ GameObject:
   - component: {fileID: 1898209431}
   - component: {fileID: 1898209430}
   m_Layer: 0
-  m_Name: Big_tree_trunk002 (1)
+  m_Name: Big_tree_trunk002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25478,8 +25478,6 @@ GameObject:
   - component: {fileID: 3473003184247734157}
   - component: {fileID: 8944468451555959042}
   - component: {fileID: 7631855537559067514}
-  - component: {fileID: 8944468451555959043}
-  - component: {fileID: 8944468451555959044}
   - component: {fileID: 8944468451555959045}
   m_Layer: 0
   m_Name: WindChime_top
@@ -27709,39 +27707,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7852860598508267424}
   m_Mesh: {fileID: 9204152942267469507, guid: f6b0c0a1244990d4e8c6e7b3448d368e, type: 3}
---- !u!114 &8944468451555959043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7852860598508267424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24a9a448108890a4882e6ee9dadd9592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ColourScript
---- !u!65 &8944468451555959044
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7852860598508267424}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.88285273, y: 0.88285303, z: 1.2734326}
-  m_Center: {x: 0.00000047683716, y: 0, z: 0.32932422}
 --- !u!95 &8944468451555959045
 Animator:
   serializedVersion: 7
