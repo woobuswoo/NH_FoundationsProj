@@ -2426,7 +2426,7 @@ GameObject:
   - component: {fileID: 332239660}
   - component: {fileID: 332239661}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9999,7 +9999,7 @@ GameObject:
   - component: {fileID: 2108446393}
   - component: {fileID: 2108446392}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: HiddenGuyCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15843,8 +15843,8 @@ GameObject:
   - component: {fileID: 4163960173499214986}
   - component: {fileID: 4163960173499214988}
   - component: {fileID: 4163960173499214987}
-  - component: {fileID: 4163960173499214989}
   - component: {fileID: 4163960173499214990}
+  - component: {fileID: 4163960173499214989}
   m_Layer: 0
   m_Name: Stick_001
   m_TagString: Untagged
