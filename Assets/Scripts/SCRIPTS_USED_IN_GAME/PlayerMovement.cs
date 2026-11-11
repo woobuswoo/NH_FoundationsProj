@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         //This calculates if you are pressing W its equal to the direction of the camera is facing, or if you press S it points it the opposite. 
-        // moecDirection.normalized helps with diagonal direction, keeping it from moving faster diagonally than straight forward and diagnoal vetors are longer than straight.
+        // moveDirection.normalized helps with diagonal direction, keeping it from moving faster diagonally than straight forward.
         moveDirection = orientation.forward *verticalInput + orientation.right * horizontalInput;
 
         //ForceMode.Force applies a continuous force keeping it smooth than a burst of speed.

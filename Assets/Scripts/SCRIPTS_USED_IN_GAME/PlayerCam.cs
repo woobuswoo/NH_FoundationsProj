@@ -14,6 +14,7 @@ public class PlayerCam : MonoBehaviour
 
     private void Start()
     {
+        //this keeps the mouse locked to the camera and hides the visibilty of the mouse.
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -30,7 +31,7 @@ public class PlayerCam : MonoBehaviour
         // stop rotation from going too high or low
         xRotation = Math.Clamp(xRotation, -90f, 90f);
         
-        
+        //this is used to calculate the rotation and orientation of the camera and player, within the hierarchy there is an empty object called orientation, this stores the direction of where the player is facing.
 
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
