@@ -9,8 +9,8 @@ public class ScoreManager : MonoBehaviour
     // USED COCO CODE ON YOUTUBES TUTORIAL 
     public static ScoreManager instance;
     public TextMeshProUGUI scoreText; // reference to the ui text component
-    public int endGame = 4;
-    public GameObject gameWinMenu;
+    public int endGame = 4; //the end game score to activate the gamewin menu
+    public GameObject gameWinMenu; //reference to the gamewin menu ui
 
     int score = 0; // keep track of current score
     
@@ -33,6 +33,7 @@ public class ScoreManager : MonoBehaviour
 
     void Update()
     {
+        // this says that when the score reaches the endGame score (4) to bring up the gamewin menu screen.
         if (score>= endGame)
         {
             GameWin();
@@ -53,6 +54,7 @@ public class ScoreManager : MonoBehaviour
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
+        //this allows us to restart the game within the gamewin menu
 
     }
 

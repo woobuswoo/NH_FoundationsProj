@@ -13,7 +13,7 @@ public class ChangeMultipleColourScript : MonoBehaviour
        m_OriginalColors = new Color[materials.Length]; //ensure the Color array is the same amount as the materials array
        for (int i = 0; i < materials.Length; i++)
         {
-            m_OriginalColors[i] = materials[i].color; //this is saying, take the original colour of the material and store it in the same array slot as material.color, esnuring we can use the original colours again.
+            m_OriginalColors[i] = materials[i].color; //this is saying, take the original colour of the material and store it in the same array slot as material.color, ensuring we can use the original colours again.
         }
     }
  
